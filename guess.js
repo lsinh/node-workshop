@@ -1,6 +1,7 @@
 var prompt = require('prompt');
 
-var rightNumber = Math.floor(Math.random() * 4) + 1;
+var rightNumber = Math.floor(Math.random() * 100) + 1; //I tested this with choosing between 4 numbers to see what would happen if I got the right one, 
+                                                        //naturally I found that the function keeps going, so I used return; to exit out
 var turns = 4;
 
 function guessItRight() {
